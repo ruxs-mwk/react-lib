@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: arial;
+}
+.doc-header {
+  padding:20px 30px;
+  font-size: 24px;
+  border-bottom: 1px solid #222;
+}
+.doc-header img {
+  margin-right: 20px;
+}
+.doc-navigation {
+  float: left;
+  width: 15%;
+  background: #222;
+  padding: 20px;
+  min-height: 700px;
+}
+.doc-navigation > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+.doc-navigation > ul a {
+  color: #fff;
+  text-decoration: none;
+  margin:8px 0;
+  display: inline-block;
+}
+.doc-componentpage{
+  float: left;
+  padding: 20px;
+  width: 75%;
+}
+.doc-example {
+  border:1px solid #d2d2d2;
+  padding: 10px;
+  background: #e5e5e5;
+  width: 100%;
+}
+.docs-props {
+  width: 100%;
+  text-align: left;
+  border: 1px solid #d2d2d2;
+}
+.docs-props td, .docs-props th{
+  padding: 5px;
+}
