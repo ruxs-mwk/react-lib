@@ -2,7 +2,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-/** Button Component */
+/** Button Component **/
 function HelloWorld({message}) {
   return <div>Hello {message} </div>
 }
