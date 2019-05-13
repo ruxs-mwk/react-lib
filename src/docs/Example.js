@@ -20,17 +20,19 @@ class Example extends React.Component {
     const {code, description, name} = this.props.example;
     const ExampleComponent = require(`./Examples/${this.props.componentName}/${name}`).default;
     return (
-      <div className="doc-example">
-        {description && <h4>{description}</h4>}
-        <ExampleComponent />
-        <p>
-          <button  onClick={this.toggleCode}>
-            {showcode ? "Hide" : "Show"} Code
-          </button>
-        </p>
+      <section className="doc-example">
+        <div className="example-view">
+          {description && <h4>{description}</h4>}
+          <ExampleComponent />
+          <p>
+            <button  onClick={this.toggleCode}>
+              {showcode ? "Hide" : "Show"} Code
+            </button>
+          </p>
 
-        {showcode && <CodeExample>{code}</CodeExample>}
-      </div>
+          {showcode && <CodeExample>{code}</CodeExample>}
+        </div>
+      </section>
     )
   }
 }

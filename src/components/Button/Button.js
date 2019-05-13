@@ -1,18 +1,27 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
+import './Button.css'
 
-/** Button Component **/
-function HelloWorld({message}) {
-  return <div>Hello {message} </div>
-}
+/** Button Component */
+const Button = ( {text, cssClass} ) => (
+  <button
+    type="button"
+    className={`default ${cssClass}`} 
+  >
+    {text}
+  </button>
+);
 
-HelloWorld.propTypes = {
-  /** Description to be displayed */
-  message: PropTypes.string
+Button.propTypes = {
+  /** Button Text */
+  text: PropTypes.string,
+  /** Button Classes: primary, secondary, disable */
+  cssClass: PropTypes.string
 };
 
-HelloWorld.defaultProps = {
-  message: 'World'
+Button.defaultProps = {
+  text: 'button',
+  cssClass: 'primary'
 };
-export default HelloWorld;
+export default Button;

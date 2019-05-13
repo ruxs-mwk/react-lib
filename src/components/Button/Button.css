@@ -1,0 +1,13 @@
+.default {
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    padding: 0 10px;
+    height: 20px;
+    font-size: 12px;
+}
+
+.primary {
+    background-color: blue;
+    color: #fff;
+}

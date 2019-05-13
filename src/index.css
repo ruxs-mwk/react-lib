@@ -40,6 +40,15 @@ body {
   padding: 10px;
   background: #e5e5e5;
   width: 100%;
+  margin-bottom: 20px;
+}
+.example-view {
+  background-color: #fff;
+  padding: 10px;
+}
+.example-view h4 {
+  margin: 15px 0;
+  font-style: italic;
 }
 .docs-props {
   width: 100%;
